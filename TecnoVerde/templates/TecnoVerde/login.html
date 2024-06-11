@@ -1,0 +1,41 @@
+{% extends 'TecnoVerde/base.html' %}
+
+{% block title %} Iniciar sesión {% endblock %}
+
+{% block content%}
+<div class="row p-4 ">
+    <div class="d-flex align-items-center justify-content-center">
+    <div class="col-6 bg-light p-4">
+        <h4 class="mb-6 text-center text-xl text-darck">Inicia sesión</h4>
+        <hr>
+        <form action="." method="POST">
+            {% csrf_token %}
+            <div class="form-floating mb-3">
+                <h6>Nombre de usuario:</h6>
+                {{ form.username }}
+            </div>
+
+            <div class="form-floating mb-3">
+                <h6>Contraseña:</h6>
+                {{ form.password }}
+            </div>
+
+            {% if form.errors or form.non_field_errors %}
+                <div class="mb-4 p-6 bg-danger">
+                    {% for field in form %}
+                        {{ field.errors }}
+                    {% endfor %}
+
+                    {{ form.non_field_errors }}
+                </div>
+            {% endif %}
+            <div class="d-flex align-items-center justify-content-center">
+            <button class="btn btn-primary mb-6 text-xl">iniciar sesión</button>
+
+        </form>
+
+    </div>
+    </div>
+</div>
+
+{% endblock%}

@@ -1,0 +1,74 @@
+<html>
+  <title>TecnoVerde</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+
+    <nav class="bg-green-600 text-white p-0 flex justify-between items-center">
+  <div class="flex items-center space-x-80">
+    <h2 href="#" class="text-3xl font-bold">TecnoVerde</h2>
+  </div>
+
+  <div class="p-2 grid grid-cols-1 md:grid-cols-1 gap-8 py-0">
+    <div class="text-left">
+      <img src="https://mail.google.com/mail/u/0?ui=2&ik=b48dc47c59&attid=0.1&permmsgid=msg-f:1799808544539879157&th=18fa3455e10326f5&view=att&disp=safe&realattid=f_lwimrkx30" alt="LogoTecnoVerde" width="100px" height="100px">
+    </div>
+  </div>
+
+  </nav>
+  <section class="bg-green-400 text-white text-center p-4 items-center">
+  <h3 class="text-xl font-semibold mb-4">Por un presente verde</h3>
+  <a class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded" href="{% url 'signup' %}">Regístrate</a> <a class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded" href="{% url 'login' %}">Iniciar sesión</a>     
+</section>
+<br>
+
+  <div class="container mx-auto px-4 py-4">
+    <h4 class="text-xl font-semibold mb-4">¿Qué es la ecología?</h4>
+    <p class="mb-4">
+        La ecología es la rama de la biología que se dedica al estudio de los seres vivos y la
+        relación de éstos con el medio ambiente en el que habitan. Además, la ecología
+        estudia la abundancia y distribución de seres vivos que existe en un área o región
+        determinada.
+        
+        Se toman en cuenta como factores de estudio dentro de esta disciplina los
+        factores bióticos, que son todos los organismos vivos; y los factores abióticos,
+        como el clima y los suelos.</p>
+        <br>
+
+  </div>
+<div class="p-2 grid grid-cols-1 md:grid-cols-3 gap-8 py-0">
+  <div class="text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/4996/4996953.png" alt="conta" class="p-16 rounded-full">
+    <h3 class="mt-0 text-xl font-semibold">Contaminación</h3>
+    <p class="mt-2 text-zinc-600">Tipos de contaminación.</p>
+    <br>
+    <a class="mt-4 bg-green-700 hover:bg-green-800 text-white py-2 px-4 rounded" href="{% url 'contaminacion' %}">View details »</a>
+  </div>
+  <div class="text-center">
+    <img src="https://cdn-icons-png.freepik.com/512/2942/2942589.png" alt="sosysus" class="p-16 rounded-full">
+    <h3 class="mt-0 text-xl font-semibold">Sostetible y Sustentable</h3>
+    <p class="mt-2 text-zinc-600">Garantizar una vida futura digna.</p>
+    <br>
+    <a class="mt-4 bg-green-700 hover:bg-green-800 text-white py-2 px-4 rounded" href="{% url 'ss' %}">View details »</a>
+  </div>
+  <div class="text-center">
+    <img src="https://cdn-icons-png.freepik.com/512/1903/1903270.png" alt="alter" class="p-16 rounded-full">
+    <h3 class="mt-0 text-xl font-semibold">Alternativas</h3>
+    <p class="mt-2 text-zinc-600">Acciones para reducir tu huella ecológica.</p>
+    <br>
+    <a class="mt-4 bg-green-700 hover:bg-green-800 text-white py-2 px-4 rounded" href="{% url 'alternativas' %}">View details »</a>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="p-2 grid-cols-1 md:grid-cols-3 gap-8 py-0">
+  <div class="text-left">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=b48dc47c59&attid=0.2&permmsgid=msg-f:1799808544539879157&th=18fa3455e10326f5&view=att&disp=safe&realattid=f_lwimrwx61" alt="LogoRevix" width="60">
+  </div>
+</div>
+  </body>
+</html>
